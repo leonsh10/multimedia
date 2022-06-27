@@ -23,10 +23,10 @@
           >
           <el-submenu index="4">
             <template slot="title">Packages</template>
-            <el-menu-item index="4-1">Family Pack</el-menu-item>
-            <el-menu-item index="4-2">Business Pack</el-menu-item>
-            <el-menu-item index="4-3">Single Pack</el-menu-item>
-            <el-menu-item index="4-3">HoneyMoon Pack</el-menu-item>
+            <el-menu-item @click="goToPackage()" index="4-1">Family Pack</el-menu-item>
+            <el-menu-item @click="goToPackage()"  index="4-2">Business Pack</el-menu-item>
+            <el-menu-item @click="goToPackage()"  index="4-3">Single Pack</el-menu-item>
+            <el-menu-item @click="goToPackage()"  index="4-3">HoneyMoon Pack</el-menu-item>
           </el-submenu>
         </div>
       </el-menu>
@@ -75,6 +75,11 @@ export default {
     goToUserProfile() {
       this.$router.push({
         name: "userprofile",
+      });
+    },
+     goToPackage() {
+      this.$router.push({
+        name: "package",
       });
     },
   },
