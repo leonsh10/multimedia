@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Homepage from "../views/Homepage.vue";
 import Package from "../views/Package.vue";
+import Resorts from "../views/Resorts.vue";
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: "/package",
     name: "package",
     component: Package,
+  },
+  {
+    path: "/resorts",
+    name: "resorts",
+    component: Resorts,
   },
   {
     path: "/contact",

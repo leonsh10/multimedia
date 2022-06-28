@@ -36,6 +36,8 @@
               >HoneyMoon Pack</el-menu-item
             >
           </el-submenu>
+          <el-menu-item index="2" @click="gotoResorts()">Resorts</el-menu-item>
+
         </div>
       </el-menu>
       <div style="margin-right: 10px">
@@ -45,7 +47,7 @@
           </span>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>Logout</el-dropdown-item>
-            <el-dropdown-item divided @click.native="goToUserProfile()"
+            <el-dropdown-item divided
               >Profile</el-dropdown-item
             >
           </el-dropdown-menu>
@@ -80,21 +82,24 @@ export default {
         name: "about-us",
       });
     },
-    goToUserProfile() {
-      this.$router.push({
-        name: "userprofile",
-      });
-    },
     goToPackage() {
       this.$router.push({
         name: "package",
       });
     },
+    gotoResorts(){
+       this.$router.push({
+        name: "resorts",
+      });
+    }
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.el-menu.el-menu--horizontal{
+  border:none;
+}
 .el-menu-demo {
   display: flex;
   align-items: center;
