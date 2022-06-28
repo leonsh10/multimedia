@@ -3,11 +3,11 @@
     <Header />
     <div class="main__div">
       <div class="main__pic">
-          <el-carousel height="600px" indicator-position="outside">
-            <el-carousel-item v-for="item in img" :key="item">
-              <img class="top__image" :src="item" />
-            </el-carousel-item>
-          </el-carousel>
+        <el-carousel height="600px" indicator-position="outside">
+          <el-carousel-item v-for="item in img" :key="item">
+            <img class="top__image" :src="item" />
+          </el-carousel-item>
+        </el-carousel>
       </div>
 
       <div class="details">

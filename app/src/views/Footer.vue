@@ -3,7 +3,12 @@
     <footer class="footer-bs">
       <div class="row">
         <div class="col-md-3 footer-brand animated fadeInLeft">
-                <img @click="goToHome" style="cursor:pointer" width="250" src="../assets/logoWhite.png" >
+          <img
+            @click="goToHome"
+            style="cursor: pointer"
+            width="250"
+            src="../assets/logoWhite.png"
+          />
           <p class="mt-3">
             Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam
             porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget
@@ -12,9 +17,12 @@
           </p>
           <p>© 2022 Voyager, All rights reserved</p>
         </div>
-        <div class="col-md-4 footer-nav animated fadeInUp" style="display:flex">
+        <div
+          class="col-md-4 footer-nav animated fadeInUp"
+          style="display: flex"
+        >
           <div class="col-md-6">
-          <h4>Menu —</h4>
+            <h4>Menu —</h4>
             <ul class="pages">
               <li><a href="/homepage">Travel</a></li>
               <li><a href="/packages">Packages</a></li>
@@ -45,10 +53,10 @@
           <h4>Newsletter</h4>
           <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
           <div class="input-group">
-           <div class="container">
-  <input type="text" placeholder="Search...">
-  <div class="search"></div>
-</div>
+            <div class="container">
+              <input type="text" placeholder="Search..." />
+              <div class="search"></div>
+            </div>
             <!-- <input
               type="text"
               class="form-control"
@@ -70,23 +78,23 @@
 <script>
 // import { FacebookIcon, InstagramIcon, TwitterIcon, LinkedinIcon, PhoneCallIcon, NavigationIcon, MailIcon } from 'vue-feather-icons'
 export default {
-  name: 'FooterView',
+  name: "FooterView",
   //  components: {
   //   FacebookIcon, InstagramIcon, TwitterIcon, LinkedinIcon, PhoneCallIcon, NavigationIcon, MailIcon
   // },
-  methods:{
-     goToAboutUs() {
+  methods: {
+    goToAboutUs() {
       this.$router.push({
         name: "about-us",
-      })},
-      goToContact() {
+      });
+    },
+    goToContact() {
       this.$router.push({
         name: "contact",
       });
     },
-  }
-
-}
+  },
+};
 </script>
 
 <style scoped>
@@ -193,13 +201,10 @@ export default {
     border-left: solid 1px rgba(255, 255, 255, 0.1);
   }
 }
-
 </style>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
-
-
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
 
 .container {
   position: absolute;
@@ -240,7 +245,7 @@ export default {
       height: 2px;
       background: white;
       transform: rotate(45deg);
-      transition: all .5s;
+      transition: all 0.5s;
     }
     &::after {
       content: "";
@@ -254,11 +259,11 @@ export default {
       height: 25px;
       border-radius: 50%;
       border: 2px solid white;
-      transition: all .5s;
+      transition: all 0.5s;
     }
   }
   input {
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
     position: absolute;
     margin: auto;
     top: 0;
@@ -275,8 +280,7 @@ export default {
     text-shadow: 0 0 10px crimson;
     padding: 0 80px 0 20px;
     border-radius: 30px;
-    box-shadow: 0 0 25px 0 crimson,
-                0 20px 25px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px 0 crimson, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
     // box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5);
     transition: all 1s;
     opacity: 0;
