@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Homepage from "../views/Homepage.vue";
 import Package from "../views/Package.vue";
 import Resorts from "../views/Resorts.vue";
+import UserProfile from "../views/profile/UserProfile.vue"
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: "/resorts",
     name: "resorts",
     component: Resorts,
+  },
+  {
+    path: "/userprofile",
+    name: "userprofile",
+    component: UserProfile
   },
   {
     path: "/contact",

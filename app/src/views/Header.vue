@@ -47,7 +47,7 @@
           </span>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>Logout</el-dropdown-item>
-            <el-dropdown-item divided
+            <el-dropdown-item @click="goToPackage()"
               >Profile</el-dropdown-item
             >
           </el-dropdown-menu>
@@ -85,6 +85,11 @@ export default {
     goToPackage() {
       this.$router.push({
         name: "package",
+      });
+    },
+    goToProfile() {
+      this.$router.push({
+        name: "userprofile",
       });
     },
     gotoResorts(){
