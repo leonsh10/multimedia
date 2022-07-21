@@ -24,15 +24,25 @@
           >
           <el-submenu index="4">
             <template slot="title">Packages</template>
-            <el-menu-item @click="goToPackage()" index="4-1">Family Pack</el-menu-item>
-            <el-menu-item @click="goToPackage()"  index="4-2">Business Pack</el-menu-item>
-            <el-menu-item @click="goToPackage()"  index="4-3">Single Pack</el-menu-item>
-            <el-menu-item @click="goToPackage()"  index="4-3">HoneyMoon Pack</el-menu-item>
+            <el-menu-item @click="goToPackage()" index="4-1"
+              >Family Pack</el-menu-item
+            >
+            <el-menu-item @click="goToPackage()" index="4-2"
+              >Business Pack</el-menu-item
+            >
+            <el-menu-item @click="goToPackage()" index="4-3"
+              >Single Pack</el-menu-item
+            >
+            <el-menu-item @click="goToPackage()" index="4-3"
+              >HoneyMoon Pack</el-menu-item
+            >
           </el-submenu>
           <!-- <el-menu-item index="5" @click="goToTickets()">Tickets</el-menu-item> -->
            <el-menu-item index="5" @click="goToBooking()">Booking</el-menu-item>
           
           
+          <el-menu-item index="2" @click="gotoResorts()">Resorts</el-menu-item>
+
         </div>
       </el-menu>
       <div style="margin-right: 10px">
@@ -42,7 +52,7 @@
           </span>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>Logout</el-dropdown-item>
-            <el-dropdown-item divided @click.native="goToUserProfile()"
+            <el-dropdown-item @click="goToPackage()"
               >Profile</el-dropdown-item
             >
           </el-dropdown-menu>
@@ -77,14 +87,14 @@ export default {
         name: "about-us",
       });
     },
-    goToUserProfile() {
-      this.$router.push({
-        name: "userprofile",
-      });
-    },
-     goToPackage() {
+    goToPackage() {
       this.$router.push({
         name: "package",
+      });
+    },
+    goToProfile() {
+      this.$router.push({
+        name: "userprofile",
       });
     },
     goToTickets() {
@@ -98,11 +108,19 @@ export default {
       });
     },
   
+    gotoResorts(){
+       this.$router.push({
+        name: "resorts",
+      });
+    }
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.el-menu.el-menu--horizontal{
+  border:none;
+}
 .el-menu-demo {
   display: flex;
   align-items: center;

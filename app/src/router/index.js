@@ -7,6 +7,8 @@ import Register from "../views/Register.vue";
 import Login from "../views/Login.vue";
 import Booking from "../views/Booking.vue";
 import Player from "../views/Player.vue";
+import Resorts from "../views/Resorts.vue";
+import UserProfile from "../views/profile/UserProfile.vue"
 
 Vue.use(VueRouter);
 
@@ -47,6 +49,16 @@ const routes = [
     component: Player,
   },
 
+  {
+    path: "/resorts",
+    name: "resorts",
+    component: Resorts,
+  },
+  {
+    path: "/userprofile",
+    name: "userprofile",
+    component: UserProfile
+  },
   {
     path: "/contact",
     name: "contact",

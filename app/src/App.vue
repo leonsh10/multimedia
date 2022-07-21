@@ -3,10 +3,8 @@
     <router-view />
   </div>
 </template>
-  <script>
-
-//import Player from "./components/Player";
+<script>
 export default {
-
- }
-  </script>
+  name: "Voyager",
+};
+</script>
