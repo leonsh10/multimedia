@@ -17,6 +17,7 @@
         active-text-color="graz"
       >
         <div class="flexed">
+          
           <el-menu-item index="2" @click="goToAboutUs()">About us</el-menu-item>
           <el-menu-item index="3" @click="goToContact()"
             >Contact Us</el-menu-item
@@ -28,6 +29,10 @@
             <el-menu-item @click="goToPackage()"  index="4-3">Single Pack</el-menu-item>
             <el-menu-item @click="goToPackage()"  index="4-3">HoneyMoon Pack</el-menu-item>
           </el-submenu>
+          <!-- <el-menu-item index="5" @click="goToTickets()">Tickets</el-menu-item> -->
+           <el-menu-item index="5" @click="goToBooking()">Booking</el-menu-item>
+          
+          
         </div>
       </el-menu>
       <div style="margin-right: 10px">
@@ -82,6 +87,17 @@ export default {
         name: "package",
       });
     },
+    goToTickets() {
+      this.$router.push({
+        name: "tickets",
+      });
+    },
+     goToBooking() {
+      this.$router.push({
+        name: "booking",
+      });
+    },
+  
   },
 };
 </script>

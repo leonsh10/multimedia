@@ -10,9 +10,11 @@ import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.css'
 
 
+
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false;
 Vue.use(VueMaterial)
+
 
 
 new Vue({

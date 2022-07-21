@@ -2,6 +2,11 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Homepage from "../views/Homepage.vue";
 import Package from "../views/Package.vue";
+import Tickets from "../views/Tickets.vue";
+import Register from "../views/Register.vue";
+import Login from "../views/Login.vue";
+import Booking from "../views/Booking.vue";
+import Player from "../views/Player.vue";
 
 Vue.use(VueRouter);
 
@@ -16,6 +21,32 @@ const routes = [
     name: "package",
     component: Package,
   },
+  {
+    path: "/tickets",
+    name: "tickets",
+    component: Tickets,
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: Register,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: Login,
+  },
+  {
+    path: "/booking",
+    name: "booking",
+    component: Booking,
+  },
+  {
+    path: "/player",
+    name: "player",
+    component: Player,
+  },
+
   {
     path: "/contact",
     name: "contact",
@@ -34,3 +65,5 @@ const router = new VueRouter({
 });
 
 export default router;
+
+
