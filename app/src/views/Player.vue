@@ -11,7 +11,14 @@
 import "../components/Player/Player.scss";
 
 export default {
-   name: 'Player',
+  name: "Player",
 
+<<<<<<< HEAD
 }
+=======
+  components: {
+   //  Player,
+  },
+};
+>>>>>>> 034e75f37b590ab07f61a8e000f75f7ace570576
 </script>

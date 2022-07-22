@@ -1,7 +1,14 @@
 <template>
     <div>
+       <div class="main__pic">
         <HeaderView />
-        <div class="row" style="">
+          <el-carousel height="600px" indicator-position="outside" >
+            <el-carousel-item v-for="item in img" :key="item">
+              <img class="top__image" :src="item" />
+            </el-carousel-item>
+          </el-carousel>
+        </div>
+        <div class="row" >
       <div class="col-md-12 width">
      <div class="col-md-6 title" >
         <h4> Book now for the best prices<br><span id="yetId"> yet</span></h4>
@@ -10,106 +17,26 @@
       </div>
     
   </div>
-  <div class="row stickytop" style="background-color:white">
-      <div class="col-md-12">
-  <div class="row " style="margin-left:16%;margin-right:10%;height:94px;margin-top:20px;">
-      <div class="row"> 
-                <div class="col-md-6">
- <el-col :span="5">   
-    <el-dropdown trigger="click">
-      <span class="el-dropdown-link">
-      <i class="el-icon-s-promotion"/>  Round Trip<i class="el-icon-arrow-down el-icon--right"></i>
-      </span>
-      <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item icon="el-icon-plus">Germany</el-dropdown-item>
-        <el-dropdown-item icon="el-icon-plus">Poland</el-dropdown-item>
-        <el-dropdown-item icon="el-icon-plus">Italy</el-dropdown-item>
-        <el-dropdown-item icon="el-icon-plus">Sweden</el-dropdown-item>
-        <el-dropdown-item icon="el-icon-plus">Spain</el-dropdown-item>
-      </el-dropdown-menu>
-    </el-dropdown>
-  </el-col> 
-  <el-col :span="4">   
-    <el-dropdown trigger="click">
-      <span class="el-dropdown-link">
-      <i class="el-icon-user-solid"/>  Adult<i class="el-icon-arrow-down el-icon--right"></i>
-      </span>
-      <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item icon="el-icon-plus">1 Adult</el-dropdown-item>
-        <el-dropdown-item icon="el-icon-plus">2 Adults</el-dropdown-item>
-      
-      </el-dropdown-menu>
-    </el-dropdown>
-  </el-col> 
-  <el-col :span="5">   
-    <el-dropdown trigger="click">
-      <span class="el-dropdown-link">
-      <i class="el-icon-user-solid"/>  Economy<i class="el-icon-arrow-down el-icon--right"></i>
-      </span>
-      <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item icon="el-icon-plus">First Class</el-dropdown-item>
-        <el-dropdown-item icon="el-icon-plus">Economy Budget</el-dropdown-item>
-      
-      </el-dropdown-menu>
-    </el-dropdown>
-  </el-col> 
-  </div>
-<div class="col-md-6"  >
-     <span id="Maps">Explore Maps <i class="el-icon-discover"></i>
-      </span><span id="links"> Looking for Travel Ideas?</span> 
-       </div>
-   
-     <div class="row" style="margin-left:0%;width:100%">
-         <div class="col-md-6">
-             <div class="row">
-                  <div class="col-md-6">
-                      <!-- <input class="tinput" placeholder="City or Airplane" type="text"/> -->
-<el-input placeholder="City or Airplane" style="height: 42px;
-    width: 110%;
-    margin-left: -14px;"></el-input>
+      <div class="all__destinations">
+            <div class="single__destination__tokyo">
+                <h3 class="single__destination-text">Tokyo</h3>
+            </div>
 
+            <div class="single__destination__paris">
+                <h3 class="single__destination-text">Paris</h3>
 
+            </div>
 
-                 </div>
-                 <div class="col-md-6" >
-                   <b-button variant="primary-outline" class="t-button" style="color:#007AE9"> <i class="el-icon-discover"/> Anywhere</b-button>
-                 </div>
-             </div>
-         </div>
-      <div class="col-md-6" >
-           <div class="row"><div class="col-md-11">
-                <el-date-picker
-                v-model="value2"
-                type="daterange"
-                align="right"
-                unlink-panels
-                range-separator="To"
-                start-placeholder="Start date"
-                end-placeholder="End date"
-                :picker-options="pickerOptions"
-                style="width: 482px;
-                margin-left:-14px;
-                height: 44px;"
-                >
-    </el-date-picker>
-               </div> 
-           <div class="col-md-1" style="border:1px solid #007AE9;background-color:#007AE9;color:white;    margin-left: -35px;">
-               <i class="el-icon-search" style="margin-top: 12px;
-    margin-left: 2px;"> </i>
-           </div>
-                </div>
-            
-         </div>
-         </div>
-    
-         </div>
-       
-  </div>  
-     
-  </div>
-  </div>
-  <div style="width:100px;height:100px">
-  </div>
+            <div class="single__destination__seoul">
+                <h3 class="single__destination-text">Seoul</h3>
+
+            </div>
+
+            <div class="single__destination__london">
+                <h3 class="single__destination-text">London</h3>
+
+            </div>
+        </div>
   <div class="row maincontent">
    <div class="col-md-12 content">
        <div class="row" style="width:100%;height:100%">
@@ -168,6 +95,11 @@ export default {
   components: {
     HeaderView,
     FooterView
+    },
+    data(){
+      return{
+        img: [require("@/assets/mac.jpg"), require("@/assets/home1.jpeg")],
+      }
     }
 }
 </script>
@@ -178,12 +110,20 @@ export default {
 
 
 
-
+  .main__pic {
+    width: 100%;
+    height: 600px;
+  }
 .stickytop{
     position: sticky;
       top: 0;
 
 }
+.top__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 
 .tinput{
 width: 110%;
@@ -306,7 +246,7 @@ body{overflow-x:hidden;}
     height: 800px;
     
 } */
-.width{
+/* .width{
     height: 650px;
     overflow: hidden;
     overflow-x: hidden;
@@ -314,7 +254,7 @@ body{overflow-x:hidden;}
     background-position: 70%;
     background-size: 100% 900px;
     
-}
+} */
 .divmod{
     height: 100px;
     overflow-x: hidden;
@@ -334,5 +274,56 @@ body{overflow-x:hidden;}
   .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
   }
-
+.all__destinations{
+    width:99%;
+    height:350px;
+    /* outline:1px solid red; */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 0px 30px;
+}
+.single__destination__paris{
+    width:22%;
+    height:300px;
+    border-radius:15px;
+    background: url('../assets/paris.jpeg');
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+.single__destination__tokyo{
+    width:22%;
+    height:300px;
+    border-radius:15px;
+    background: url('../assets/tokyo.jpeg');
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+.single__destination__seoul{
+    width:22%;
+    height:300px;
+    border-radius:15px;
+    background: url('../assets/bali.jpeg');
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+.single__destination__london{
+    width:22%;
+    height:300px;
+    border-radius:15px;
+    background: url('../assets/london.jpeg');
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+.single__destination-text{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+    height:97%;
+    display:flex;
+    align-items: end;
+    margin-left:10px;
+    letter-spacing: 1px;
+}
 </style>
