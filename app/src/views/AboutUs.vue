@@ -4,7 +4,7 @@
             <Header />
         </div>
         <div class="row headermainT" style="margin:0px">
-            <div class="row headermaintextT" style="margin:0px">
+            <div class="row headermaintextT" >
                 <div class="col-md-6">
                     <h1 class="headerT animate__animated animate__pulse animate__infinite animate__slow ">Voyager<span
                             class="undertitleT">about us</span></h1>
