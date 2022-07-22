@@ -13,7 +13,6 @@
         :default-active="activeIndex2"
         class="el-menu-demo"
         mode="horizontal"
-        background-color="white"
         active-text-color="graz"
       >
         <div class="flexed">
