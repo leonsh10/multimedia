@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="line"></div>
-    <div class="flexed">
+    <div class="flexed" style=" background-color: #ffffff75;">
       <div>
         <img
           src="../assets/voyager.png"
@@ -45,17 +45,7 @@
         </div>
       </el-menu>
       <div style="margin-right: 10px">
-        <el-dropdown>
-          <span class="el-dropdown-link">
-            abc@hotmail.com<i class="el-icon-arrow-down el-icon--right"></i>
-          </span>
-          <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item>Logout</el-dropdown-item>
-            <el-dropdown-item @click="goToPackage()"
-              >Profile</el-dropdown-item
-            >
-          </el-dropdown-menu>
-        </el-dropdown>
+       
       </div>
     </div>
   </div>
@@ -140,11 +130,11 @@ export default {
   font-size: 12px;
 }
 ::v-deep .el-menu-item {
-  color: #6e798c;
+  color: #535353;
   font-family: "Open Sans", sans-serif;
 }
 ::v-deep .el-submenu__title {
-  color: #6e798c;
+  color: #535353;
   font-family: "Open Sans", sans-serif;
 }
 </style>
