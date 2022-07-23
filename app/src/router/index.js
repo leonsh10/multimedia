@@ -9,6 +9,7 @@ import Booking from "../views/Booking.vue";
 import Player from "../views/Player.vue";
 import Resorts from "../views/Resorts.vue";
 import UserProfile from "../views/profile/UserProfile.vue"
+import AboutUs from "../views/AboutUs.vue"
 
 Vue.use(VueRouter);
 
@@ -67,6 +68,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
+  },
+  {
+    path: "/aboutus",
+    name: "aboutus",
+    component: AboutUs
   },
 ];
 
