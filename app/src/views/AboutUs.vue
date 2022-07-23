@@ -60,7 +60,7 @@
             style="background-color:white;height:700px;margin:0px;position:sticky;top:0px">
             <ul class="cards">
                 <li>
-                    <a class="card animate__animated animate__pulse animate__infinite animate__slow">
+                    <a class="card animate__animated animate__pulse animate__infinite animate__slow" @click="goToAboutUs1()">
                         <img src="../assets/oldkorea.jpg" class="card__image" alt="" />
                         <div class="card__overlay">
                             <div class="card__header" style="background-color:white">
@@ -79,7 +79,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" class="card animate__animated animate__pulse animate__infinite animate__slow">
+                    <a href="" class="card animate__animated animate__pulse animate__infinite animate__slow" @click="goToAboutUs2()">
                         <img src="../assets/seol.jpg" class="card__image" alt="" />
                         <div class="card__overlay">
                             <div class="card__header">
@@ -98,7 +98,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" class="card animate__animated animate__pulse animate__infinite animate__slow">
+                    <a href="" class="card animate__animated animate__pulse animate__infinite animate__slow" @click="goToAboutUs3()">
                         <img src="../assets/ittali.jpg" class="card__image" alt="" />
                         <div class="card__overlay">
                             <div class="card__header">
@@ -507,8 +507,22 @@ export default {
         Header,
         Footer,
 
-    }, methods() {
-
+    }, methods: {
+goToAboutUs1() {
+      this.$router.push({
+        name: "aboutus1",
+      });
+    },
+    goToAboutUs2() {
+      this.$router.push({
+        name: "aboutus2",
+      });
+    },
+     goToAboutUs3() {
+      this.$router.push({
+        name: "aboutus3",
+      });
+    },
     },
 
 

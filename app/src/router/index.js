@@ -10,6 +10,9 @@ import Player from "../views/Player.vue";
 import Resorts from "../views/Resorts.vue";
 import UserProfile from "../views/profile/UserProfile.vue"
 import AboutUs from "../views/AboutUs.vue"
+import Aboutus1 from "../views/Aboutus1.vue"
+import AboutUs2 from "../views/AboutUs2.vue"
+import Aboutus3 from "../views/Aboutus3.vue"
 
 Vue.use(VueRouter);
 
@@ -73,6 +76,21 @@ const routes = [
     path: "/aboutus",
     name: "aboutus",
     component: AboutUs
+  },
+  {
+    path: "/aboutus1",
+    name: "aboutus1",
+    component: Aboutus1
+  },
+  {
+    path: "/aboutus2",
+    name: "aboutus2",
+    component: AboutUs2
+  },
+  {
+    path: "/aboutus3",
+    name: "aboutus3",
+    component: Aboutus3
   },
 ];
 

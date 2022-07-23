@@ -83,7 +83,7 @@ export default {
     },
     goToAboutUs() {
       this.$router.push({
-        name: "about-us",
+        name: "aboutus",
       });
     },
     goToPackage() {
