@@ -13,6 +13,7 @@ import AboutUs from "../views/AboutUs.vue"
 import Aboutus1 from "../views/Aboutus1.vue"
 import AboutUs2 from "../views/AboutUs2.vue"
 import Aboutus3 from "../views/Aboutus3.vue"
+import Blog from "../views/Blog.vue"
 
 Vue.use(VueRouter);
 
@@ -91,6 +92,11 @@ const routes = [
     path: "/aboutus3",
     name: "aboutus3",
     component: Aboutus3
+  },
+  {
+    path: "/blog",
+    name: "blog",
+    component: Blog
   },
 ];
 
