@@ -115,6 +115,19 @@
     <div class="card animate__animated animate__pulse animate__infinite animate__slow" @click="sendtoAboutus2()">
       <div class="card__image">
         <img src="../assets/paris.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260   " />
+      </div> 
+    </div>
+     <div class="card card--featured ">
+      <div class="card__side-by-side--m">
+       
+        
+          <video controls>
+          <source type="video/mp4" src="../assets/tailand.mp4" />
+        </video>
+                <div class="card__content">
+        <p><em>A traveller is the one who seeks the peace of nature, enjoy this video of tailand on of the best places at the moment</em></p>
+        <p>— Voyager Team</p>
+      </div>
       </div>
     </div>
   </div>

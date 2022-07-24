@@ -4,7 +4,7 @@
             <Header />
         </div>
         <div class="row headermainT" style="margin:0px">
-            <div class="row headermaintextT" >
+            <div class="row headermaintextT">
                 <div class="col-md-6">
                     <h1 class="headerT animate__animated animate__pulse animate__infinite animate__slow ">Voyager<span
                             class="undertitleT">about us</span></h1>
@@ -60,7 +60,8 @@
             style="background-color:white;height:700px;margin:0px;position:sticky;top:0px">
             <ul class="cards">
                 <li>
-                    <a class="card animate__animated animate__pulse animate__infinite animate__slow" @click="goToAboutUs1()">
+                    <a class="card animate__animated animate__pulse animate__infinite animate__slow"
+                        @click="goToAboutUs1()">
                         <img src="../assets/oldkorea.jpg" class="card__image" alt="" />
                         <div class="card__overlay">
                             <div class="card__header" style="background-color:white">
@@ -79,7 +80,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" class="card animate__animated animate__pulse animate__infinite animate__slow" @click="goToAboutUs2()">
+                    <a href="" class="card animate__animated animate__pulse animate__infinite animate__slow"
+                        @click="goToAboutUs2()">
                         <img src="../assets/seol.jpg" class="card__image" alt="" />
                         <div class="card__overlay">
                             <div class="card__header">
@@ -98,7 +100,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" class="card animate__animated animate__pulse animate__infinite animate__slow" @click="goToAboutUs3()">
+                    <a href="" class="card animate__animated animate__pulse animate__infinite animate__slow"
+                        @click="goToAboutUs3()">
                         <img src="../assets/ittali.jpg" class="card__image" alt="" />
                         <div class="card__overlay">
                             <div class="card__header">
@@ -127,7 +130,8 @@
             </div>
             <div class="col-md-6">
                 <div class="row titulliTT" style="margin:0px">
-                    <h4 class="titulliTT animate__animated animate__pulse animate__infinite animate__slow">Submit with Love!</h4>
+                    <h4 class="titulliTT animate__animated animate__pulse animate__infinite animate__slow">Submit with
+                        Love!</h4>
                 </div>
                 <el-form ref="form" :model="form" label-width="120px" style="margin-top:50px">
                     <div class="row" style="margin:0px">
@@ -169,8 +173,83 @@
                     </el-form-item>
                 </el-form>
             </div>
+
         </div>
-       
+        <div class="row marginT textingT" style="background-color:white;height:900px">
+            <div class="col-md-4" style="background-color:white;">
+                <div class="music-card">
+                    <div class="image">
+                        <img src="../assets/sf.jpg" />
+                    </div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="info">
+                        <h2 class="title">Fourth Of July</h2>
+                        <author class="artist">Sufjan Stevens</author>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-top:-27%">
+                    <audio src="../assets/sufjansteven.mp3" controls style="height:100px;width: 64%;
+    margin-left: 18%;">
+
+                    </audio>
+                </div>
+
+
+            </div>
+            <div class="col-md-4" style="background-color:white;">
+                <div class="music-card">
+                    <div class="image">
+                        <img src="../assets/lgo.jpg" />
+                    </div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="info">
+                        <h2 class="title">Life goes on</h2>
+                        <author class="artist">BTS</author>
+                    </div>
+
+
+                </div>
+                <div class="row" style="margin-top:-27%">
+                    <audio src="../assets/lgo.mp3" autoplay controls style="height:100px;width: 64%;
+    margin-left: 18%;">
+
+                    </audio>
+                </div>
+
+
+            </div>
+            <div class="col-md-4" style="background-color:white;">
+                <div class="music-card">
+                    <div class="image">
+                        <img src="../assets/springday.jpg" />
+                    </div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="info">
+                        <h2 class="title">Spring Day</h2>
+                        <author class="artist">BTS</author>
+                    </div>
+
+
+                </div>
+                <div class="row" style="margin-top:-27%">
+                    <audio src="../assets/sd.mp3" controls style="height:100px;width: 64%;
+    margin-left: 18%;">
+
+                    </audio>
+                </div>
+
+
+
+
+            </div>
+        </div>
 
         <div style="position:sticky;top:0px">
             <Footer />
@@ -179,14 +258,15 @@
     </div>
 
 </template>
-<style scoped>
+<style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
-body{
-    margin:0%;
+body {
+    margin: 0%;
 }
+
 .titulliTT {
     margin-left: 12%;
     margin-top: 14%;
@@ -497,6 +577,105 @@ body {
     overflow: hidden;
     background-color: white;
 }
+
+// Variables ---------------------
+$veronica: #B01DE8;
+$red-orange: #F34235;
+
+// Animation ----------------------
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background: #fafafa;
+}
+
+.music-card {
+    & {
+        margin: 100px auto;
+        border-radius: 6px;
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        position: relative;
+        width: 300px;
+        height: 500px;
+    }
+
+    >.image img {
+        position: absolute;
+        z-index: 1;
+        opacity: 0.3;
+        height: 300px;
+        width: 300px;
+    }
+
+    >.image:after {
+        height: 100px;
+        content: '';
+        top: 200px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        background: linear-gradient(rgba(#DD417F, 0), #DD417F);
+    }
+
+    >.wave {
+        position: absolute;
+        height: 750px;
+        width: 750px;
+        opacity: 0.6;
+        left: 0;
+        top: 0;
+        margin-left: -70%;
+        margin-top: -130%;
+        border-radius: 40%;
+        background: radial-gradient($veronica, $red-orange);
+        animation: spin 3000ms infinite linear;
+    }
+
+    >.wave:nth-child(2) {
+        top: 10px;
+        animation: spin 4000ms infinite linear;
+    }
+
+    >.wave:nth-child(3) {
+        top: 10px;
+        animation: spin 5000ms infinite linear;
+    }
+
+    >.info {
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    >.info>.title {
+        font-size: 1.3em;
+        font-weight: 400;
+        font-family: 'Playfair display';
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    >.info>.artist {
+        font-family: 'Source sans pro';
+        color: #cfcfcf;
+        font-size: 0.8em;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+}
 </style>
 
 <script>
@@ -511,21 +690,21 @@ export default {
         Footer,
 
     }, methods: {
-goToAboutUs1() {
-      this.$router.push({
-        name: "aboutus1",
-      });
-    },
-    goToAboutUs2() {
-      this.$router.push({
-        name: "aboutus2",
-      });
-    },
-     goToAboutUs3() {
-      this.$router.push({
-        name: "aboutus3",
-      });
-    },
+        goToAboutUs1() {
+            this.$router.push({
+                name: "aboutus1",
+            });
+        },
+        goToAboutUs2() {
+            this.$router.push({
+                name: "aboutus2",
+            });
+        },
+        goToAboutUs3() {
+            this.$router.push({
+                name: "aboutus3",
+            });
+        },
     },
 
 
