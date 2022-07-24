@@ -184,6 +184,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
+body{
+    margin:0%;
+}
 .titulliTT {
     margin-left: 12%;
     margin-top: 14%;
