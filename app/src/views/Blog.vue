@@ -5,35 +5,35 @@
     </div>
         <div class="main-container">
   <div class="grid-container">
-    <div class="card card--2x">
+    <div class="card card--2x animate__animated animate__pulse animate__infinite animate__slow ">
       <div class="card__content big-script padding-large" @click="sendtoAboutus1()">
         <p>Travel and see the world</p>
       </div>
     </div>
-    <div class="card">
+    <div class="card animate__animated animate__pulse animate__infinite animate__slow ">
       <div class="card__image">
         <img src="../assets/bali.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
       </div>
     </div>
-    <div class="card">
+    <div class="card animate__animated animate__pulse animate__infinite animate__slow ">
       <div class="card__image">
         <img src="../assets/ittali.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
       </div>
     </div>
-    <div class="card">
+    <div class="card animate__animated animate__pulse animate__infinite animate__slow ">
       <div class="card__content" @click="sendtoAboutus3()">
         <p><em>Travel is fatal to prejudice, bigotry, and narrow-mindedness.</em></p>
         <p>— Mark Twain</p>
       </div>
     </div>
-    <div class="card card--horizontal" @click="sendtoAboutus()">
+    <div class="card card--horizontal animate__animated animate__pulse animate__infinite animate__slow " @click="sendtoAboutus()">
       <div class="card__image">
         <img src="../assets/korea.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
       </div>
     </div>
-    <div class="card card--featured">
+    <div class="card card--featured animate__animated animate__pulse animate__infinite animate__slow">
       <div class="card__side-by-side--m">
-        <div class="card__image">
+        <div class="card__image  ">
           <img src="../assets/oldkorea.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
         </div>
         <div class="card__content padding-large--l">
@@ -44,75 +44,75 @@
         </div>
       </div>
     </div>
-    <div class="card card--vertical" @click="sendtoAboutus2()">
+    <div class="card card--vertical animate__animated animate__pulse animate__infinite animate__slow " @click="sendtoAboutus2()">
       <div class="card__image">
         <img src="../assets/koreanstreet.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
       </div>
     </div>
-    <div class="card">
+    <div class="card animate__animated animate__pulse animate__infinite animate__slow ">
       <div class="card__image" @click="sendtoAboutus1()">
         <img src="../assets/ven.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
       </div>
     </div>
-    <div class="card card--horizontal">
+    <div class="card card--horizontal animate__animated animate__pulse animate__infinite animate__slow ">
       <div class="card__side-by-side">
         <div class="card__image">
           <img src="../assets/vvenn.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
         </div>
-        <div class="card__content" @click="sendtoAboutus3()">
+        <div class="card__content animate__animated animate__pulse animate__infinite animate__slow" @click="sendtoAboutus3()">
           <h3>Lorem ipsum</h3>
           <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
         </div>
       </div>
     </div>
-    <div class="card card--vertical" @click="sendtoAboutus2()">
+    <div class="card card--vertical animate__animated animate__pulse animate__infinite animate__slow" @click="sendtoAboutus2()">
       <div class="card__image">
         <img src="../assets/newyork.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
       </div>
     </div>
-    <div class="card">
+    <div class="card animate__animated animate__pulse animate__infinite animate__slow">
       <div class="card__image" @click="sendtoAboutus1()">
         <img src="../assets/seol.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
       </div>
     </div>
-    <div class="card" @click="sendtoAboutus2()">
+    <div class="card animate__animated animate__pulse animate__infinite animate__slow" @click="sendtoAboutus2()">
       <div class="card__content">
         <p><em>We wander for distraction, but we travel for fulfilment.</em></p>
         <p>— Hilaire Belloc</p>
       </div>
     </div>
-    <div class="card card--2x" @click="sendtoAboutus1()">
+    <div class="card card--2x animate__animated animate__pulse animate__infinite animate__slow" @click="sendtoAboutus1()">
       <div class="card__image">
         <img src="../assets/koreanstreet.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
       </div>
     </div>
-    <div class="card card--horizontal card--frameless" @click="sendtoAboutus3()">
+    <div class="card card--horizontal card--frameless animate__animated animate__pulse animate__infinite animate__slow" @click="sendtoAboutus3()">
       <div class="card__content big-script">
         <p>Bon voyage</p>
       </div>
     </div>
-    <div class="card" @click="sendtoAboutus2()">
+    <div class="card animate__animated animate__pulse animate__infinite animate__slow" @click="sendtoAboutus2()">
       <div class="card__image">
         <img src="../assets/itali.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
       </div>
     </div>
-    <div class="card card--horizontal" @click="sendtoAboutus1()">
+    <div class="card card--horizontal animate__animated animate__pulse animate__infinite animate__slow" @click="sendtoAboutus1()">
       <div class="card__image">
         <img src="../assets/beachblue.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
       </div>
     </div>
-    <div class="card">
+    <div class="card animate__animated animate__pulse animate__infinite animate__slow">
       <div class="card__image" @click="sendtoAboutus1()">
         <img src="../assets/tokyo.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260" />
       </div>
     </div>
-    <div class="card" @click="sendtoAboutus3()">
+    <div class="card animate__animated animate__pulse animate__infinite animate__slow" @click="sendtoAboutus3()">
       <div class="card__content">
         <p><em>A good traveller has no fixed plans and is not intent on arriving.</em></p>
         <p>— Lao Tzu</p>
       </div>
     </div>
-    <div class="card" @click="sendtoAboutus2()">
+    <div class="card animate__animated animate__pulse animate__infinite animate__slow" @click="sendtoAboutus2()">
       <div class="card__image">
         <img src="../assets/paris.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260   " />
       </div>
