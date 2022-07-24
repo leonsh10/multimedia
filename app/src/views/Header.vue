@@ -41,6 +41,7 @@
           
           
           <el-menu-item index="2" @click="gotoResorts()">Resorts</el-menu-item>
+          <el-menu-item index="8" @click="goToBlog()">Blog</el-menu-item>
 
         </div>
       </el-menu>
@@ -84,6 +85,11 @@ export default {
     goToProfile() {
       this.$router.push({
         name: "userprofile",
+      });
+    },
+    goToBlog(){
+ this.$router.push({
+        name: "blog",
       });
     },
     goToTickets() {

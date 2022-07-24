@@ -203,6 +203,7 @@ body {
   grid-row: auto / span 1;
   grid-column: auto / span 1;
   background-color: white;
+  cursor:pointer;
   box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
   h1, h2, h3, h4, p {
     margin-top: 0;
