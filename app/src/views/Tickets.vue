@@ -3,7 +3,7 @@
       <Header />
    <div class="form-wrap">
     <form class="login">
-      <h2>Where Would You like to Go?</h2>
+      <h3>Where Would You like to Go?</h3>
       <div class="inputs">
         <div class="input">
                       <!-- <div  style="height: 100px;">
@@ -49,7 +49,7 @@
           />
       </div>
     
-      <el-button
+      <el-button @click="goToFlights()"
         size="large"
         
         plain
@@ -75,6 +75,14 @@ export default ({
         Header,
         
     },
+      methods: {
+    goToFlights() {
+      this.$router.push({
+        name: "flights",
+      });
+    },
+   
+  },
 })
 </script>
 

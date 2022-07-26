@@ -9,6 +9,7 @@ import Booking from "../views/Booking.vue";
 import Player from "../views/Player.vue";
 import Resorts from "../views/Resorts.vue";
 import UserProfile from "../views/profile/UserProfile.vue"
+import Flights from "../views/Flights.vue"
 
 Vue.use(VueRouter);
 
@@ -58,6 +59,11 @@ const routes = [
     path: "/userprofile",
     name: "userprofile",
     component: UserProfile
+  },
+  {
+    path: "/flights",
+    name: "flights",
+    component: Flights
   },
   {
     path: "/contact",

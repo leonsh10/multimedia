@@ -19,8 +19,8 @@
            </video>
       
     </div>
-          <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p>Welcome to Voyager!</p>
+      <p>Reserve your tickets here, plan your destination and more. We hope you enjoy your vacation with your loved ones as much as possible, thank you for choosing Voyager!</p>
       
       
       
@@ -37,7 +37,13 @@
            <b-button class="butoni">View Demos</b-button> <br>
       <b-button @click="goToTickets()" class="butoni"
         >Go to Tickets</b-button>
+        
       </div>
+<br><br><br>
+       <img
+                class="plane"
+                src="../assets/plane.png"
+              />
     </div>
 
 <!-- <div class="player">
@@ -140,6 +146,13 @@ display: flex;
   width: 25%;
   background-color: #f1f1f1;
   padding-left: 20px;
+}
+
+.plane{
+
+  height: 150px;
+  width: 150px;
+  margin-left: 55px;
 }
 
 </style>
