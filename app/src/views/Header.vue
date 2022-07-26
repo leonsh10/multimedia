@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="line"></div>
-    <div class="flexed" style=" background-color: #ffffff75;">
+    <div class="flexed" style="background-color: #ffffff75">
       <div>
         <img
           src="../assets/voyager.png"
@@ -16,7 +16,6 @@
         active-text-color="graz"
       >
         <div class="flexed">
-          
           <el-menu-item index="2" @click="goToAboutUs()">About us</el-menu-item>
           <el-menu-item index="3" @click="goToContact()"
             >Contact Us</el-menu-item
@@ -37,16 +36,29 @@
             >
           </el-submenu>
           <!-- <el-menu-item index="5" @click="goToTickets()">Tickets</el-menu-item> -->
-           <el-menu-item index="5" @click="goToBooking()">Booking</el-menu-item>
-          
-          
+          <el-menu-item index="5" @click="goToBooking()">Booking</el-menu-item>
+
           <el-menu-item index="2" @click="gotoResorts()">Resorts</el-menu-item>
           <el-menu-item index="8" @click="goToBlog()">Blog</el-menu-item>
-
         </div>
       </el-menu>
       <div style="margin-right: 10px">
-       
+        <el-dropdown>
+          <span class="el-dropdown-link">
+            info@voyager.com<i class="el-icon-arrow-down el-icon--right"></i>
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item @click.native="goToProfile()"
+              >Profile</el-dropdown-item
+            >
+            <el-dropdown-item @click.native="goToLogin()"
+              >Login</el-dropdown-item
+            >
+            <el-dropdown-item @click.native="goToRegister()"
+              >Register</el-dropdown-item
+            >
+          </el-dropdown-menu>
+        </el-dropdown>
       </div>
     </div>
   </div>
@@ -64,7 +76,7 @@ export default {
   methods: {
     goToHome() {
       this.$router.push({
-        name: "home",
+        name: "homepage",
       });
     },
     goToContact() {
@@ -87,8 +99,8 @@ export default {
         name: "userprofile",
       });
     },
-    goToBlog(){
- this.$router.push({
+    goToBlog() {
+      this.$router.push({
         name: "blog",
       });
     },
@@ -97,24 +109,34 @@ export default {
         name: "tickets",
       });
     },
-     goToBooking() {
+    goToBooking() {
       this.$router.push({
         name: "booking",
       });
     },
-  
-    gotoResorts(){
-       this.$router.push({
+
+    gotoResorts() {
+      this.$router.push({
         name: "resorts",
       });
-    }
+    },
+    goToLogin() {
+      this.$router.push({
+        name: "login",
+      });
+    },
+    goToRegister() {
+      this.$router.push({
+        name: "register",
+      });
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.el-menu.el-menu--horizontal{
-  border:none;
+.el-menu.el-menu--horizontal {
+  border: none;
 }
 .el-menu-demo {
   display: flex;

@@ -1,14 +1,14 @@
 <template>
   <div>
+    <HeaderView />
     <div class="main__pic">
-      <HeaderView />
       <!-- <el-carousel height="600px" indicator-position="outside" >
             <el-carousel-item v-for="item in img" :key="item">
               <img class="top__image" :src="item" />
             </el-carousel-item>
           </el-carousel> -->
-      <div class="row">
-        <div class="col-md-12 width">
+      <div>
+        <div class="">
           <div class="col-md-6 title">
             <h1>Find your adventure</h1>
             <h2>
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div style="display: flex; flex-direction: column; padding: 10px">
-      <h1 style="text-align: center">
+      <h1 style="text-align: center; margin-top: 15px">
         Some of the greates cities in the world
       </h1>
       <div class="all__destinations">
@@ -42,19 +42,41 @@
       </div>
     </div>
 
-    <div class="row">
-      <div style="margin: 20px; display: flex">
-        <video controls>
+    <div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column-reverse;
+          margin-top: 75px;
+          width: 100%;
+          height: fit-content;
+        "
+      >
+        <video
+          style="
+            width: 50%;
+            height: 30%;
+            margin: 0 auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+              rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          "
+          controls
+        >
           <source type="video/mp4" src="../assets/world.mp4" />
         </video>
-        <h1>Explore the world with Voyager!</h1>
+        <h1 class="text-center">Explore the world with Voyager!</h1>
       </div>
     </div>
-    <section class="why_adventure">
-      <div >
-        <h2 class="title-header-section">Why book an adventure with <strong>Voyager</strong>?</h2>
+    <section class="why_adventure mt-5">
+      <div>
+        <h2 class="title-header-section">
+          Why book an adventure with <strong>Voyager</strong>?
+        </h2>
       </div>
-      <div class="list_info_with_icon" style="border-bottom: 1px solid rgba(255, 255, 255, 1)">
+      <div
+        class="list_info_with_icon"
+        style="border-bottom: 1px solid rgba(255, 255, 255, 1)"
+      >
         <div class="item_info">
           <img src="../assets/hiking.png" />
           <h5>
@@ -240,7 +262,6 @@ a:hover {
   margin-left: 32%;
 }
 .title {
-  margin-top: 10%;
   margin-left: 18%;
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -379,8 +400,8 @@ body {
   color: white;
   font-family: "Roboto Condensed", sans-serif;
 }
-.title-header-section{
-    color: white;
+.title-header-section {
+  color: white;
   font-family: "Roboto Condensed", sans-serif;
 }
 </style>
