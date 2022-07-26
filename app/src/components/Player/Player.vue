@@ -1,5 +1,5 @@
 <template>
-  <div>qetu e ka shkru aj</div>
+  <div></div>
 </template>
 
 <script>
