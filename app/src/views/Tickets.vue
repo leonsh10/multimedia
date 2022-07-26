@@ -13,16 +13,17 @@
   
   </el-steps>
 </div> -->
-            
-          <input
-            type="text"
-            placeholder="Select City"
-            
-            name=""
-            id=""
-          />
-          <!-- <email class="icon"/> -->
 
+            <input type="text" placeholder="Select City" name="" id="" />
+            <!-- <email class="icon"/> -->
+          </div>
+          <div class="input">
+            <input type="text" placeholder="Your Destination" name="" id="" />
+            <!-- <password class="icon"/> -->
+          </div>
+          <el-date-picker v-model="value1" type="date" placeholder="Pick a day">
+          </el-date-picker>
+          <input type="text" placeholder="1 Adult" name="" id="" />
         </div>
         <div class="input">
              
@@ -85,7 +86,6 @@ export default ({
   },
 })
 </script>
-
 
 <style>
 .form-wrap {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="line"></div>
-    <div class="flexed">
+    <div class="flexed" style="background-color: #ffffff75">
       <div>
         <img
           src="../assets/voyager.png"
@@ -13,11 +13,9 @@
         :default-active="activeIndex2"
         class="el-menu-demo"
         mode="horizontal"
-        background-color="white"
         active-text-color="graz"
       >
         <div class="flexed">
-          
           <el-menu-item index="2" @click="goToAboutUs()">About us</el-menu-item>
           <el-menu-item index="3" @click="goToContact()"
             >Contact Us</el-menu-item
@@ -38,22 +36,26 @@
             >
           </el-submenu>
           <!-- <el-menu-item index="5" @click="goToTickets()">Tickets</el-menu-item> -->
-           <el-menu-item index="5" @click="goToBooking()">Booking</el-menu-item>
-          
-          
-          <el-menu-item index="2" @click="gotoResorts()">Resorts</el-menu-item>
+          <el-menu-item index="5" @click="goToBooking()">Booking</el-menu-item>
 
+          <el-menu-item index="2" @click="gotoResorts()">Resorts</el-menu-item>
+          <el-menu-item index="8" @click="goToBlog()">Blog</el-menu-item>
         </div>
       </el-menu>
       <div style="margin-right: 10px">
         <el-dropdown>
           <span class="el-dropdown-link">
-            abc@hotmail.com<i class="el-icon-arrow-down el-icon--right"></i>
+            info@voyager.com<i class="el-icon-arrow-down el-icon--right"></i>
           </span>
           <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item>Logout</el-dropdown-item>
-            <el-dropdown-item @click="goToPackage()"
+            <el-dropdown-item @click.native="goToProfile()"
               >Profile</el-dropdown-item
+            >
+            <el-dropdown-item @click.native="goToLogin()"
+              >Login</el-dropdown-item
+            >
+            <el-dropdown-item @click.native="goToRegister()"
+              >Register</el-dropdown-item
             >
           </el-dropdown-menu>
         </el-dropdown>
@@ -74,7 +76,7 @@ export default {
   methods: {
     goToHome() {
       this.$router.push({
-        name: "home",
+        name: "homepage",
       });
     },
     goToContact() {
@@ -84,7 +86,7 @@ export default {
     },
     goToAboutUs() {
       this.$router.push({
-        name: "about-us",
+        name: "aboutus",
       });
     },
     goToPackage() {
@@ -97,29 +99,44 @@ export default {
         name: "userprofile",
       });
     },
+    goToBlog() {
+      this.$router.push({
+        name: "blog",
+      });
+    },
     goToTickets() {
       this.$router.push({
         name: "tickets",
       });
     },
-     goToBooking() {
+    goToBooking() {
       this.$router.push({
         name: "booking",
       });
     },
-  
-    gotoResorts(){
-       this.$router.push({
+
+    gotoResorts() {
+      this.$router.push({
         name: "resorts",
       });
-    }
+    },
+    goToLogin() {
+      this.$router.push({
+        name: "login",
+      });
+    },
+    goToRegister() {
+      this.$router.push({
+        name: "register",
+      });
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.el-menu.el-menu--horizontal{
-  border:none;
+.el-menu.el-menu--horizontal {
+  border: none;
 }
 .el-menu-demo {
   display: flex;
@@ -141,11 +158,11 @@ export default {
   font-size: 12px;
 }
 ::v-deep .el-menu-item {
-  color: #6e798c;
+  color: #535353;
   font-family: "Open Sans", sans-serif;
 }
 ::v-deep .el-submenu__title {
-  color: #6e798c;
+  color: #535353;
   font-family: "Open Sans", sans-serif;
 }
 </style>

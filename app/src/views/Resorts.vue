@@ -49,7 +49,7 @@
               <div class="div__second-details">
                 <h4 class="second-details__h3">Globales Costa Tropical</h4>
                 <p class="second-details__p">
-                   Meliá represents some of the finest and best-loved hotels in
+                  Meliá represents some of the finest and best-loved hotels in
                   the world with 350 resorts spread across 40 countries,
                   including Spain plus the Balearics and Canaries.
                 </p>
@@ -107,7 +107,7 @@
               <div class="div__second-details">
                 <h4 class="second-details__h3">Meliá Hotels & Resorts</h4>
                 <p class="second-details__p">
-                   Meliá represents some of the finest and best-loved hotels in
+                  Meliá represents some of the finest and best-loved hotels in
                   the world with 350 resorts spread across 40 countries,
                   including Spain plus the Balearics and Canaries.
                 </p>

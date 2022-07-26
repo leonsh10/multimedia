@@ -3,20 +3,36 @@ import VueRouter from "vue-router";
 import Homepage from "../views/Homepage.vue";
 import Package from "../views/Package.vue";
 import Tickets from "../views/Tickets.vue";
-import Register from "../views/Register.vue";
-import Login from "../views/Login.vue";
 import Booking from "../views/Booking.vue";
 import Player from "../views/Player.vue";
 import Resorts from "../views/Resorts.vue";
 import UserProfile from "../views/profile/UserProfile.vue"
 import Flights from "../views/Flights.vue"
+import UserProfile from "../views/profile/UserProfile.vue";
+import AboutUs from "../views/AboutUs.vue";
+import Aboutus1 from "../views/Aboutus1.vue";
+import AboutUs2 from "../views/AboutUs2.vue";
+import Aboutus3 from "../views/Aboutus3.vue";
+import Blog from "../views/Blog.vue";
+import LoginForm from "../views/LoginForm.vue";
+import RegisterForm from "../views/RegisterForm.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "home",
+    name: "login",
+    component: LoginForm,
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: RegisterForm,
+  },
+  {
+    path: "/homepage",
+    name: "homepage",
     component: Homepage,
   },
   {
@@ -28,16 +44,6 @@ const routes = [
     path: "/tickets",
     name: "tickets",
     component: Tickets,
-  },
-  {
-    path: "/register",
-    name: "register",
-    component: Register,
-  },
-  {
-    path: "/login",
-    name: "login",
-    component: Login,
   },
   {
     path: "/booking",
@@ -58,7 +64,7 @@ const routes = [
   {
     path: "/userprofile",
     name: "userprofile",
-    component: UserProfile
+    component: UserProfile,
   },
   {
     path: "/flights",
@@ -74,6 +80,31 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
   },
+  {
+    path: "/aboutus",
+    name: "aboutus",
+    component: AboutUs,
+  },
+  {
+    path: "/aboutus1",
+    name: "aboutus1",
+    component: Aboutus1,
+  },
+  {
+    path: "/aboutus2",
+    name: "aboutus2",
+    component: AboutUs2,
+  },
+  {
+    path: "/aboutus3",
+    name: "aboutus3",
+    component: Aboutus3,
+  },
+  {
+    path: "/blog",
+    name: "blog",
+    component: Blog,
+  },
 ];
 
 const router = new VueRouter({
@@ -83,5 +114,3 @@ const router = new VueRouter({
 });
 
 export default router;
-
-
