@@ -1,101 +1,55 @@
 <template>
-
-    <div >
-        <Header /> 
-        <br> <br><br>
-        <div class="maindivv">
-
-            <!-- <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-            <p> .</p>
-            <p> .</p>
-            <p> .</p> -->
-
-        </div>
-        <div class="flights">
-<h2>Flights</h2> 
-<!-- <el-table class="tabela"
-      :data="tableData"
-      border
-      style="width: 100%;"> -->
-     
-  <!-- <el-table-column
-        prop="date"
-       
-        label="Date of Flight"
-        width="180">
-      </el-table-column>
-    
-      <el-table-column
-        prop="name"
-        label="Agency"
-        
-        width="180">
-      </el-table-column>
-      <el-table-column
-        prop="address"
-        label="Price">
-      <i class="el-icon-delete"/>
-      </el-table-column>
-       <el-table-column
-        prop="to"
-        label="To">
-      </el-table-column>
-    </el-table> -->
-<div class="tabela">
-    <table style=""  class="styled-table">
-    <thead>
-        <tr>
-            <th>Date of Flight</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>To</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>2020-05-03</td>
-            <td>Delta</td>
-            <td>350 $</td>
-            <td>Los Angeles</td>
-        </tr>
-        <tr class="active-row">
-            <td>2021-19-07</td>
-            <td>Lufthansa</td>
-            <td>150 $</td>
-            <td>Germany</td>
-        </tr>
-        <!-- and so on... -->
-         <tr>
-            <td>2022-05-04</td>
-            <td>Emirates</td>
-            <td>189 $</td>
-            <td>France</td>
-        </tr>
-         <tr class="active-row">
-            <td>2016-05-01</td>
-            <td>American Airlines</td>
-            <td>400 $</td>
-            <td>USA</td>
-        </tr>
-    </tbody>
-</table>
-</div>
-
-        </div>
-<br><br><br><br><br><br><br><br><br><br><br>
-        <div>
-            <Footer /> 
-        </div>
+  <div>
+    <Header />
+    <div class="maindivv"></div>
+    <div class="flights">
+      <h2>Flights</h2>
+      <div class="tabela">
+        <table style="" class="styled-table">
+          <thead>
+            <tr>
+              <th>Date of Flight</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>To</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2020-05-03</td>
+              <td>Delta</td>
+              <td>350 $</td>
+              <td>Los Angeles</td>
+            </tr>
+            <tr class="active-row">
+              <td>2021-19-07</td>
+              <td>Lufthansa</td>
+              <td>150 $</td>
+              <td>Germany</td>
+            </tr>
+            <!-- and so on... -->
+            <tr>
+              <td>2022-05-04</td>
+              <td>Emirates</td>
+              <td>189 $</td>
+              <td>France</td>
+            </tr>
+            <tr class="active-row">
+              <td>2016-05-01</td>
+              <td>American Airlines</td>
+              <td>400 $</td>
+              <td>USA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div>
+      <Footer />
+    </div>
+  </div>
 </template>
-
 
 <script src="//unpkg.com/vue@2/dist/vue.js"></script>
 <script src="//unpkg.com/element-ui@2.15.8/lib/index.js"></script>
@@ -128,122 +82,112 @@ import Footer from "./Footer.vue";
 // var Ctor = Vue.extend(Main)
 // new Ctor().$mount('#app')
 
-
 export default {
-
-//  data() {
-//         return {
-//           tableData: [{
-//             date: '2020-05-03',
-//             name: 'Delta',
-//             address: '350',
-//             to:'Los Angeles'
-//           }, {
-//             date: '2021-19-07',
-//             name: 'Lufthansa',
-//             address: '150',
-//             to:'Germany'
-//           }, {
-//             date: '2022-05-04',
-//             name: 'Emirates',
-//             address: '189',
-//             to:'France'
-//           },  {
-//             date: '2016-05-04',
-//             name: 'Airitaly',
-//             address: '200',
-//             to:'Italy'
-//           },{
-//             date: '2016-05-01',
-//             name: 'American Airlines',
-//             address: '400',
-//             to:'USA'
-//           }]
-//         }
-//       },
+  //  data() {
+  //         return {
+  //           tableData: [{
+  //             date: '2020-05-03',
+  //             name: 'Delta',
+  //             address: '350',
+  //             to:'Los Angeles'
+  //           }, {
+  //             date: '2021-19-07',
+  //             name: 'Lufthansa',
+  //             address: '150',
+  //             to:'Germany'
+  //           }, {
+  //             date: '2022-05-04',
+  //             name: 'Emirates',
+  //             address: '189',
+  //             to:'France'
+  //           },  {
+  //             date: '2016-05-04',
+  //             name: 'Airitaly',
+  //             address: '200',
+  //             to:'Italy'
+  //           },{
+  //             date: '2016-05-01',
+  //             name: 'American Airlines',
+  //             address: '400',
+  //             to:'USA'
+  //           }]
+  //         }
+  //       },
 
   components: {
     Header,
     Footer,
-   
   },
 
-  
+  //   methods: {
+  //     goToTickets() {
+  //       this.$router.push({
+  //         name: "tickets",
+  //       });
+  //     },
 
-
-
-
-//   methods: {
-//     goToTickets() {
-//       this.$router.push({
-//         name: "tickets",
-//       });
-//     },
-   
-//   },
-  
+  //   },
 };
 </script>
 <style>
 @import url("//unpkg.com/element-ui@2.15.8/lib/theme-chalk/index.css");
 .maindivv {
   /* flex: 2; */
-   /* background-size: cover;  */
-  background-image: url("../assets/travell.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; 
-   width: 100%;
-  height: 500px; 
-
+  /* background-size: cover;  */
+  background-image: url("../assets/fligtsss.jpeg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  width: 100%;
+  height: 700px;
 }
 
-.flights{
-
-    align-self: middle;
-    align-items: middle;
+.flights {
+  align-self: middle;
+  align-items: middle;
+  padding: 20px;
 }
-.maindivv{
-
-    align-items: middle;
+.maindivv {
+  align-items: middle;
 }
 
-.tabela{
-   display: flex;
-   width: 100%;
+.tabela {
+  padding: 20px;
+  display: flex;
+  width: 100%;
   height: 100%;
 }
 .styled-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    height: 300px;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 300px;
 }
 .styled-table thead tr {
-    background-color: #a85cb8;
-    color: #ffffff;
-    text-align: left;
+  background-color: #a85cb8;
+  color: #ffffff;
+  text-align: left;
 }
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
+  padding: 12px 15px;
 }
 .styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 .styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #a85cb8;
+  border-bottom: 2px solid #a85cb8;
 }
 .styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #a85cb8;
+  font-weight: bold;
+  color: #a85cb8;
 }
 </style>

@@ -12,6 +12,5 @@ import "../components/Player/Player.scss";
 
 export default {
   name: "Player",
-
-}
+};
 </script>

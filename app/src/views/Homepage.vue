@@ -8,7 +8,7 @@
             </el-carousel-item>
           </el-carousel> -->
       <div>
-        <div class="">
+        <div class="titlee">
           <div class="col-md-6 title">
             <h1>Find your adventure</h1>
             <h2>
@@ -147,6 +147,9 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
+}
+.titlee{
+  padding-top: 100px;
 }
 .stickytop {
   position: sticky;

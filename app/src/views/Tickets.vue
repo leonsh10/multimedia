@@ -6,40 +6,29 @@
         <h3>Where Would You like to Go?</h3>
         <div class="inputs">
           <div class="input">
-            <!-- <div  style="height: 100px;">
-  <el-steps direction="vertical" :active="1">
-     <el-step title=""></el-step>
-    <el-step title=""></el-step> 
-  
-  </el-steps>
-</div> -->
-
             <input type="text" placeholder="Select City" name="" id="" />
-            <!-- <email class="icon"/> -->
           </div>
           <div class="input">
             <input type="text" placeholder="Your Destination" name="" id="" />
-            <!-- <password class="icon"/> -->
           </div>
           <el-date-picker v-model="value1" type="date" placeholder="Pick a day">
           </el-date-picker>
           <input type="text" placeholder="1 Adult" name="" id="" />
-        <div class="input">
-          <input type="text" placeholder="Your Destination" name="" id="" />
-          <!-- <password class="icon"/> -->
-        </div>
-        <el-date-picker v-model="value1" type="date" placeholder="Pick a day">
-        </el-date-picker>
-        <input type="text" placeholder="1 Adult" name="" id="" />
+          <div class="input">
+            <input type="text" placeholder="Your Destination" name="" id="" />
+          </div>
+          <el-date-picker v-model="value1" type="date" placeholder="Pick a day">
+          </el-date-picker>
+          <input type="text" placeholder="1 Adult" name="" id="" />
 
-        <el-button
-          @click="goToFlights()"
-          type="info"
-          size="large"
-          plain
-          style="width: 150px; margin-top: 10px"
-          >Search Flights</el-button
-        >
+          <el-button
+            @click="goToFlights()"
+            type="info"
+            size="large"
+            plain
+            style="width: 150px; margin-top: 10px"
+            >Search Flights</el-button
+          >
         </div>
 
         <div class="angle"></div>
@@ -52,25 +41,21 @@
 <script>
 import Header from "./Header.vue";
 
-
-export default ({
-    components: {
-        Header,
-
-    },
-      methods: {
+export default {
+  components: {
+    Header,
+  },
+  methods: {
     goToFlights() {
       this.$router.push({
         name: "flights",
       });
     },
-
   },
-})
+};
 </script>
 
 <style lang="scss" scoped>
-
 .form-wrap {
   overflow: hidden;
   display: flex;
@@ -108,7 +93,7 @@ h2 {
 
 .inputs {
   width: 100%;
-  max-width: 350px; 
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -129,13 +114,6 @@ input {
   padding: 4px 4px 4px 30px;
   height: 50px;
 }
-
-/* .icon{
-            width: 12px;
-            position: absolute;
-            left: 6px;
-          }
-         */
 
 .forgot-password {
   text-decoration: none;
@@ -162,7 +140,7 @@ button {
   box-shadow: 0 1px 0px rgba(255, 255, 255, 0.1) inset,
     0 0px 1px rgba(0, 0, 0, 0.7);
 
-  background: rgba(0, 0, 0, 0.1); /* #191919 */
+  background: rgba(0, 0, 0, 0.1);
   border: 1px solid #141414;
   padding: 10px 25px;
 }
@@ -184,7 +162,8 @@ button {
   width: 100%;
   height: 100%;
 }
-::v-deep .el-date-editor.el-input, .el-date-editor.el-input__inner{
+::v-deep .el-date-editor.el-input,
+.el-date-editor.el-input__inner {
   width: 350px;
 }
 </style>
