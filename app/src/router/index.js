@@ -16,6 +16,7 @@ import Blog from "../views/Blog.vue";
 import LoginForm from "../views/LoginForm.vue";
 import RegisterForm from "../views/RegisterForm.vue";
 import SinglePackage from "../views/SinglePackage.vue";
+import BusinessPack from "../views/BusinessPack.vue";
 
 Vue.use(VueRouter);
 
@@ -44,6 +45,11 @@ const routes = [
     path: "/single-package",
     name: "single-package",
     component: SinglePackage,
+  },
+  {
+    path: "/business-package",
+    name: "business-package",
+    component: BusinessPack,
   },
   {
     path: "/tickets",
