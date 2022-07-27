@@ -12,10 +12,6 @@ import "../components/Player/Player.scss";
 
 export default {
   name: "Player",
-<<<<<<< HEAD
 
 }
-=======
-};
->>>>>>> 069d2c9e8ce87218defa910f2e5d374073aab01d
 </script>

@@ -24,7 +24,6 @@
           <el-date-picker v-model="value1" type="date" placeholder="Pick a day">
           </el-date-picker>
           <input type="text" placeholder="1 Adult" name="" id="" />
-        </div>
         <div class="input">
           <input type="text" placeholder="Your Destination" name="" id="" />
           <!-- <password class="icon"/> -->
@@ -35,11 +34,13 @@
 
         <el-button
           @click="goToFlights()"
+          type="info"
           size="large"
           plain
           style="width: 150px; margin-top: 10px"
           >Search Flights</el-button
         >
+        </div>
 
         <div class="angle"></div>
       </form>
@@ -68,7 +69,8 @@ export default ({
 })
 </script>
 
-<style>
+<style lang="scss" scoped>
+
 .form-wrap {
   overflow: hidden;
   display: flex;
@@ -106,7 +108,10 @@ h2 {
 
 .inputs {
   width: 100%;
-  max-width: 350px;
+  max-width: 350px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .input {
@@ -178,5 +183,8 @@ button {
   background-image: url("../assets/planeee.jpg");
   width: 100%;
   height: 100%;
+}
+::v-deep .el-date-editor.el-input, .el-date-editor.el-input__inner{
+  width: 350px;
 }
 </style>
