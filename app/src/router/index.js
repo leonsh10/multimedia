@@ -17,6 +17,7 @@ import LoginForm from "../views/LoginForm.vue";
 import RegisterForm from "../views/RegisterForm.vue";
 import SinglePackage from "../views/SinglePackage.vue";
 import BusinessPack from "../views/BusinessPack.vue";
+import HoneymoonPack from "../views/HoneymoonPack.vue";
 
 Vue.use(VueRouter);
 
@@ -50,6 +51,11 @@ const routes = [
     path: "/business-package",
     name: "business-package",
     component: BusinessPack,
+  },
+  {
+    path: "/honeymoon-package",
+    name: "honeymoon-package",
+    component: HoneymoonPack,
   },
   {
     path: "/tickets",
