@@ -1,26 +1,23 @@
 <template>
-  <div >
+  <div>
     <Header />
 
     <!-- <h1>Booking, Scheduling, and Payments</h1>
     <h1>for tour Companies</h1> -->
 
-
-<div class="row">
-
-    <div class="leftcolumn">
-      <div class="card">
-     <h1>Booking, Scheduling, and Payments for tour Companies</h1>
-     <h5>Enjoy traveling with us !</h5>
-     <div class="player">
-       
-           <video style="width:700px" controls>
+    <div class="row" style="--bs-gutter-x: 0 !important;">
+      <div class="leftcolumn">
+        <div class="card">
+          <h1>Booking, Scheduling, and Payments for tour Companies</h1>
+          <h5>Enjoy traveling with us !</h5>
+          <div class="player">
+            <video style="width: 700px" controls>
               <source type="video/mp4" src="../assets/borabora.mp4" />
            </video>
       
     </div>
-          <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p>Welcome to Voyager!</p>
+      <p>Reserve your tickets here, plan your destination and more. We hope you enjoy your vacation with your loved ones as much as possible, thank you for choosing Voyager!</p>
       
       
       
@@ -37,21 +34,26 @@
            <b-button class="butoni">View Demos</b-button> <br>
       <b-button @click="goToTickets()" class="butoni"
         >Go to Tickets</b-button>
+        
       </div>
+<br><br><br>
+       <img
+                class="plane"
+                src="../assets/plane.png"
+              />
     </div>
 
-<!-- <div class="player">
+      <!-- <div class="player">
        
            <video style="width:700px" controls>
               <source type="video/mp4" src="../assets/borabora.mp4" />
            </video>
       
     </div> -->
-</div>
+    </div>
 
-     <Footer /> 
+    <Footer />
   </div>
-  
 </template>
 
 <script>
@@ -62,7 +64,6 @@ export default {
   components: {
     Header,
     Footer,
-   
   },
   methods: {
     goToTickets() {
@@ -70,22 +71,18 @@ export default {
         name: "tickets",
       });
     },
-   
   },
-  
 };
 </script>
 
 <style scoped>
-.divikrys{
-
+.divikrys {
   display: flex;
 }
 
-.header{
-display: block;
-margin-bottom: 40px;
-
+.header {
+  display: block;
+  margin-bottom: 40px;
 }
 .maindiv {
   /* margin-left: 30px; */
@@ -103,25 +100,20 @@ margin-bottom: 40px;
   background-color: #6e41e2;
   /* width: 20%;
   height: 10%; */
-  border-radius: 12px; 
-      height: 70px;
-    width: 300px;
-
-
-
+  border-radius: 12px;
+  height: 70px;
+  width: 300px;
 }
 
-.butonat{
-display: flex;
- align-items: self-end;
-
+.butonat {
+  display: flex;
+  align-items: self-end;
 }
 
-.player{
+.player {
   /* margin-left: 250px;
   margin-bottom: 40px; */
   padding: 20px;
-
 }
 
 .card {
@@ -130,7 +122,7 @@ display: flex;
   margin-top: 20px;
 }
 
-.leftcolumn {   
+.leftcolumn {
   float: left;
   width: 75%;
 }
@@ -140,6 +132,17 @@ display: flex;
   width: 25%;
   background-color: #f1f1f1;
   padding-left: 20px;
+}
+
+.plane{
+
+  height: 150px;
+  width: 150px;
+  margin-left: 55px;
+}
+
+*{
+  --bs-gutter-x:0 !important;
 }
 
 </style>

@@ -38,12 +38,20 @@
             <b-button
               type="submit"
               class="mt-3"
-              style="height: 50px; font-family: 'Anek Latin', sans-serif"
+              style="
+                height: 50px;
+                font-family: 'Anek Latin', sans-serif;
+                margin-left: 5px;
+              "
               variant="primary"
               >Send Message</b-button
             >
-            <div class="mt-3">
-              <button class="button" @click.prevent="clearData()">
+            <div>
+              <button
+                class="button"
+                style="margin-left: 15px; margin-top: 20px"
+                @click.prevent="clearData()"
+              >
                 <div class="icon">
                   <svg class="top">
                     <use xlink:href="#top" />
