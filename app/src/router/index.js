@@ -15,6 +15,7 @@ import Aboutus3 from "../views/Aboutus3.vue";
 import Blog from "../views/Blog.vue";
 import LoginForm from "../views/LoginForm.vue";
 import RegisterForm from "../views/RegisterForm.vue";
+import SinglePackage from "../views/SinglePackage.vue";
 
 Vue.use(VueRouter);
 
@@ -38,6 +39,11 @@ const routes = [
     path: "/package",
     name: "package",
     component: Package,
+  },
+  {
+    path: "/single-package",
+    name: "single-package",
+    component: SinglePackage,
   },
   {
     path: "/tickets",
