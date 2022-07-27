@@ -5,7 +5,7 @@
     <!-- <h1>Booking, Scheduling, and Payments</h1>
     <h1>for tour Companies</h1> -->
 
-    <div class="row" style="--bs-gutter-x: 0 !important">
+    <div class="row" style="--bs-gutter-x: 0 !important;">
       <div class="leftcolumn">
         <div class="card">
           <h1>Booking, Scheduling, and Payments for tour Companies</h1>
@@ -139,6 +139,10 @@ export default {
   height: 150px;
   width: 150px;
   margin-left: 55px;
+}
+
+*{
+  --bs-gutter-x:0 !important;
 }
 
 </style>

@@ -6,7 +6,6 @@ import Tickets from "../views/Tickets.vue";
 import Booking from "../views/Booking.vue";
 import Player from "../views/Player.vue";
 import Resorts from "../views/Resorts.vue";
-import UserProfile from "../views/profile/UserProfile.vue"
 import Flights from "../views/Flights.vue"
 import UserProfile from "../views/profile/UserProfile.vue";
 import AboutUs from "../views/AboutUs.vue";
